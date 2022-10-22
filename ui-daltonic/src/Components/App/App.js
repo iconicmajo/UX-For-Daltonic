@@ -1,21 +1,20 @@
-import './App.css';
+import React, { Component } from "react";
+import './App.scss';
+import { ThemeContext} from '../../context/theme-context';
+import Home from "../Home";
 
-function App() {
+
+function App(props) {
+  const [theme, setTheme] = React.useState('dark');
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className={`theme-${theme}`}>
+        <Home />
+        hola
+      </div>
+    </ThemeContext.Provider>
     </div>
   );
 }
