@@ -25,7 +25,9 @@ function Home() {
       <div className="header-content">
         <a href="/" className="logo-section">
           <span>Demo Library 4 Daltonic People</span>
-          <Button />
+          <Button 
+          color={'secondary'}
+          text={'Button'}/>
         </a>
         <div className="toggle-btn-section">
           <div className={`toggle-checkbox m-vertical-auto`}>

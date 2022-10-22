@@ -6,20 +6,22 @@
     padding: 5px 4px;
     margin: 3px;
     border-radius: 4px;
-    @include themify($themes) {
-        background-color:  themed('primary-color');
+    .primary {
+        @include themify($themes) {
+            background-color:  themed('primary-color') !important;
+        }
+    }
+    
+    .secondary {
+        @include themify($themes) {
+            background-color:  themed('secondary-color') !important;
+        }
     }
 }
 
-.button-secondary {
-    width: 100%;
-    padding: 5px 4px;
-    margin: 3px;
-    border-radius: 4px;
-    @include themify($themes) {
-        background-color:  themed('secondary-color');
-    }
-}
+
+
+
 
 /*Definicion de los Colores*/
 

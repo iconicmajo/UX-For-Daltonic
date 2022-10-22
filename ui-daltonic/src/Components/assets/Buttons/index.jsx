@@ -7,21 +7,18 @@ const INITIAL_VALUES = {
   offsetF: 0
 }
 
-class Button extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ...INITIAL_VALUES,
-    }
-  }
-  
-  render() {
-    return (
-      <div className="button">
-        hola
+export const Button = ({
+  color,
+  text
+}) => {
+  return(
+    <div className="button">
+      <div className={color ? `${color}`: 'primary'}>
+      {text ? text:'Insert Text Here'}
+        
       </div>
-    );
-  }
+    </div>
+  )
 }
 
 export default Button;
