@@ -2,6 +2,7 @@ import React from "react";
 import {ThemeContext} from "../../context/theme-context";
 import Button from '../assets/Buttons';
 import Alert from "../assets/Alerts";
+import ProgressBar from "../assets/ProgessBar";
 import './styles.scss'  
 
 function Home() {
@@ -40,6 +41,10 @@ function Home() {
       <Alert 
           color={'primary'}
           text={'THIS IS AN ALERT'} />
+<ProgressBar 
+          color={'primary'}
+          text={'Youre almost Done'} 
+          percentaje={'50'} />
     </div>
     );
 }

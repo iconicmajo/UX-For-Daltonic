@@ -1,0 +1,57 @@
+@import '../../../styles/theme-vars.scss';
+@use "sass:math";
+
+/*Creacion del componente*/
+.bar {
+    width: 25vw;
+    background-color:#E2E2E2 ;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.progress  {
+    //width: 75-2%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 10px 5px 10px 5px;
+}
+
+.primary {
+    @include themify($themes) {
+        background-color:  themed('primary-color') !important;
+    }
+}
+
+.secondary {
+    @include themify($themes) {
+        background-color:  themed('secondary-color') !important;
+    }
+}
+
+.success {
+    @include themify($themes) {
+        background-color:  themed('success-color') !important;
+    }
+}
+
+.danger {
+    @include themify($themes) {
+        background-color:  themed('danger-color') !important;
+    }
+}
+
+.warning {
+    @include themify($themes) {
+        background-color:  themed('warning-color') !important;
+    }
+}
+
+.info {
+    @include themify($themes) {
+        background-color:  themed('info-color') !important;
+    }
+}
