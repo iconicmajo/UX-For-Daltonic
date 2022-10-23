@@ -9,7 +9,7 @@ export const ProgressBar = ({
 }) => {
   return(
     <div className={`bar`}>
-      <div className={`progress ${color}`} style={{width:`75%`}}>
+      <div className={`progress ${color}`} style={{width:`${percentaje}%`}}>
         {text ? text:'Insert Text Here'}
       </div>
     </div>
