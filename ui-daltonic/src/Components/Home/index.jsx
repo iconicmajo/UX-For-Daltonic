@@ -18,17 +18,7 @@ function Home() {
       <div className="layout-wrapper">
       <div className="main-wrapper">
       <header className="header">
-      <div className="header-content">
-        <a href="/" className="logo-section">
-          <span>Demo Library 4 Daltonic People</span>
-          </a>
-          <Button 
-          color={'secondary'}
-          text={'The longest tittle i can imagine'}/>
-          <Alert 
-          color={'primary'}
-          text={'THIS IS AN ALERT'} />
-        
+      <div className="header-content"> 
         <div className="toggle-btn-section">
           <div className={`toggle-checkbox m-vertical-auto`}>
             <input
@@ -40,11 +30,16 @@ function Home() {
             />
             <button type="button" className={`toggle-btn__input-label`} onClick={handleThemeChange}></button>
           </div>
-         
         </div>
       </div>
     </header>
       </div>
+      <Button 
+          color={'secondary'}
+          text={'The longest tittle i can imagine'}/>
+      <Alert 
+          color={'primary'}
+          text={'THIS IS AN ALERT'} />
     </div>
     );
 }
