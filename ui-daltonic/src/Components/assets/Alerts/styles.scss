@@ -1,0 +1,50 @@
+@import '../../../styles/theme-vars.scss';
+
+/*Creacion del componente*/
+.alert {
+    position: fixed top-right;
+    align-self: center;
+    width: 25vw;
+    height: fit-content;
+    margin-left: 15px;
+    padding: 15px 8px 15px 8px;
+    border-radius: 5px;
+    text-align: left;
+    justify-content: left;
+}
+
+.primary {
+    @include themify($themes) {
+        background-color:  themed('primary-color-alert') !important;
+    }
+}
+
+.secondary {
+    @include themify($themes) {
+        background-color:  themed('secondary-color-alert') !important;
+    }
+}
+
+.success {
+    @include themify($themes) {
+        background-color:  themed('success-color-alert') !important;
+    }
+}
+
+.danger {
+    @include themify($themes) {
+        background-color:  themed('danger-color-alert') !important;
+    }
+}
+
+.warning {
+    @include themify($themes) {
+        background-color:  themed('warning-color-alert') !important;
+    }
+}
+
+.info {
+    @include themify($themes) {
+        background-color:  themed('info-color-alert') !important;
+    }
+}

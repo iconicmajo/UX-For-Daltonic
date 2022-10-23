@@ -1,0 +1,48 @@
+@import '../../../styles/theme-vars.scss';
+
+/*Creacion del componente*/
+.button {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 15px 8px 15px 8px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.primary {
+    @include themify($themes) {
+        background-color:  themed('primary-color') !important;
+    }
+}
+
+.secondary {
+    @include themify($themes) {
+        background-color:  themed('secondary-color') !important;
+    }
+}
+
+.success {
+    @include themify($themes) {
+        background-color:  themed('success-color') !important;
+    }
+}
+
+.danger {
+    @include themify($themes) {
+        background-color:  themed('danger-color') !important;
+    }
+}
+
+.warning {
+    @include themify($themes) {
+        background-color:  themed('warning-color') !important;
+    }
+}
+
+.info {
+    @include themify($themes) {
+        background-color:  themed('info-color') !important;
+    }
+}

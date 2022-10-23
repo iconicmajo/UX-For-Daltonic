@@ -2,15 +2,15 @@ import React from "react";
 import "./styles.scss";
 
 
-export const Modals = ({
+export const Alert = ({
   color,
   text
 }) => {
   return(
-    <div className={`button ${color}`}>
+    <div className={`alert ${color}`}>
         {text ? text:'Insert Text Here'}
     </div>
   )
 }
 
-export default Modals;
+export default Alert;

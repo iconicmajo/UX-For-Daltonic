@@ -1,6 +1,7 @@
 import React from "react";
 import {ThemeContext} from "../../context/theme-context";
-import Button from '../assets/Buttons'
+import Button from '../assets/Buttons';
+import Alert from "../assets/Alerts";
 import './styles.scss'  
 
 function Home() {
@@ -20,10 +21,14 @@ function Home() {
       <div className="header-content">
         <a href="/" className="logo-section">
           <span>Demo Library 4 Daltonic People</span>
+          </a>
           <Button 
           color={'secondary'}
           text={'The longest tittle i can imagine'}/>
-        </a>
+          <Alert 
+          color={'primary'}
+          text={'THIS IS AN ALERT'} />
+        
         <div className="toggle-btn-section">
           <div className={`toggle-checkbox m-vertical-auto`}>
             <input
