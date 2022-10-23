@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import './App.scss';
 import { ThemeContext} from '../../context/theme-context';
 import Home from "../Home";
 
 
-function App(props) {
+function App() {
   const [theme, setTheme] = React.useState('dark');
   
   return (

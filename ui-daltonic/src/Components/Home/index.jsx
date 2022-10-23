@@ -1,12 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import {ThemeContext} from "../../context/theme-context";
 import Button from '../assets/Buttons'
 import './styles.scss'  
-const INITIAL_VALUES = {
-  offset: 0,
-  offsetN: 0,
-  offsetF: 0
-}
 
 function Home() {
   const { theme, setTheme } = React.useContext(ThemeContext);
@@ -27,7 +22,7 @@ function Home() {
           <span>Demo Library 4 Daltonic People</span>
           <Button 
           color={'secondary'}
-          text={'Button'}/>
+          text={'The longest tittle i can imagine'}/>
         </a>
         <div className="toggle-btn-section">
           <div className={`toggle-checkbox m-vertical-auto`}>
