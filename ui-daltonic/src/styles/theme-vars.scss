@@ -3,14 +3,13 @@ $themes: (
     bodyBackgroundColor: white,
     textColor: #000,
     toggleBackground: #dfe4ea,
-    primary-color: red,
-    secondary-color: pink,
-    warning-color:red,
-    danger-color:red,
-    success-color: green,
-    info-color:skyblue,
+    primary-color: #316BF4,
+    secondary-color: #6F757C,
+    warning-color:#F5C243,
+    danger-color:#CB454A,
+    success-color: #408458,
+    info-color:#5DC7EC,
     component-text: white,
-
   ),
   protanopie: (
     bodyBackgroundColor: white,
@@ -35,7 +34,6 @@ $themes: (
     success-color: #00236F,
     info-color:#007AFF,
     component-text: white,
-
   ),
   tritanopie: (
     bodyBackgroundColor: white,
@@ -48,7 +46,6 @@ $themes: (
     success-color: #003C46,
     info-color:#01B6D1,
     component-text: white,
-
   ),
 );
 
@@ -74,3 +71,25 @@ $themes: (
 @function themed($key) {
   @return map-get($theme-map, $key);
 }
+
+button {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 15px 8px 15px 8px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: bold;
+    background-color: transparent;
+
+    .primary{
+      @include themify($themes) {
+        color: themed('component-text') !important;;
+        background-color:  themed('primary-color') !important;
+      }
+      }
+}
+
