@@ -39,13 +39,13 @@ function Home() {
               onChange={() =>{handleThemeChange('normal')}}
               checked={theme === 'normal'}
             />
-            <p>protanopia</p>
+            <p>Protanopia</p>
             <input
               className="toggle-btn__input"
               type="checkbox"
               label="protanopia"
               name="checkbox"
-              onChange={() =>{handleThemeChange('dark')}}
+              onChange={() =>{handleThemeChange('protanopie')}}
               checked={theme === 'protanopie'}
             />
             <p>Deuteranopia</p>

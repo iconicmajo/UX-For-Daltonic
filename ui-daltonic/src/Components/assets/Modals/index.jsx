@@ -13,7 +13,6 @@ export const Modals = ({
       <div className="modal-object">
       <div className="modal-tittle">
       <span className="closebtn" onClick={() => {display='none'}}>&times;</span> 
-
         Tittle
       </div>
       <hr/>

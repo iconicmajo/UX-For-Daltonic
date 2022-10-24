@@ -20,26 +20,7 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    .logo-section {
-      height: 50px;
-      text-decoration: none;
-      display: flex;
-      width: 430px;
-      @include themify($themes) {
-        color: themed('textColor');
-      }
-      font-weight: 600;
-      text-transform: uppercase;
-      img {
-        width: 50px;
-        height: 50px;
-      }
-      span {
-        display: inline-block;
-        font-size: 30px;
-        margin: auto;
-      }
-    }
+   
     .toggle-btn-section {
       margin: auto 0 auto auto;
       .toggle-checkbox {
@@ -204,69 +185,6 @@ img {
     margin-top: -20%;
   
   }
-
-  .menu-footer{
-    display: block;
-    margin-bottom: 0px;
-    text-align: center;
-    transition: ease-in 0.7s;
-
-    img {
-      height: 7vh;
-
-    }
-
-    p {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 10px;
-      color: #EDE6D6;
-    }
-    p:hover {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 10px;
-      color: #EDE6D6;
-    }
-
-  }
-}
-
-.background {
-  background-size: cover;
-  overflow: hidden;
-  width: 130vw;
-  height: 160vh;
-  margin-left: -250px;
-  margin-top: -170px;
-  //animation: loading 30s linear infinite;
-  @keyframes loading {
-    0% {
-      transform: rotate(-15deg);
-    }
-    50% {
-      transform: rotate(15deg);
-    }
-    100% {
-      transform: rotate(-15deg);
-    }
-  }
-}
-
-.containerLogo {
-  width: 400px;
- height: 100vh;
- margin-top: 15vh;
-  top: 0%;
-  position: absolute;
-  left: 35%;
-  img {
-    margin-top: 50%;
-    width: 100%;
-  }
-  Header {
-    margin-right: 80%;
-  }
 }
 
 @media (max-width: 576px) {
@@ -301,7 +219,6 @@ img {
     display: none;
   }
 }
-
   
 }
 
