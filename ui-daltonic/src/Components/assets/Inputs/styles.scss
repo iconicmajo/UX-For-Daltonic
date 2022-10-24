@@ -1,22 +1,14 @@
 @import '../../../styles/theme-vars.scss';
-@use "sass:math";
 
 /*Creacion del componente*/
-.bar {
-    width: 25vw;
-    background-color:#E2E2E2 ;
+.button {
+    width: fit-content;
     height: fit-content;
-    padding: 5px;
-    border-radius: 30px;
+    cursor: pointer;
+    padding: 15px 8px 15px 8px;
+    border-radius: 5px;
     text-align: center;
     justify-content: center;
-}
-
-.progress  {
-    height: 90%;
-    overflow: hidden;
-    border-radius: 30px;
-    padding: 10px 5px 10px 5px;
 }
 
 .primary {

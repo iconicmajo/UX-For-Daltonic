@@ -1,48 +1,28 @@
 @import '../../../styles/theme-vars.scss';
 
 /*Creacion del componente*/
-.button {
-    width: fit-content;
+.modal {
+    background-color: #FFFFFF;
+    width: 25vw;
     height: fit-content;
     cursor: pointer;
-    padding: 15px 8px 15px 8px;
+    padding: 15px 15px 15px 15px;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     justify-content: center;
-}
 
-.primary {
-    @include themify($themes) {
-        background-color:  themed('primary-color') !important;
+    .modal-tittle {
+        color: #000000DE;
+        font-weight: bolder;
     }
-}
 
-.secondary {
-    @include themify($themes) {
-        background-color:  themed('secondary-color') !important;
+    .modal-body {
+        color: #575656;
     }
-}
 
-.success {
-    @include themify($themes) {
-        background-color:  themed('success-color') !important;
-    }
-}
-
-.danger {
-    @include themify($themes) {
-        background-color:  themed('danger-color') !important;
-    }
-}
-
-.warning {
-    @include themify($themes) {
-        background-color:  themed('warning-color') !important;
-    }
-}
-
-.info {
-    @include themify($themes) {
-        background-color:  themed('info-color') !important;
+    .modal-footer {
+        text-align: end !important;
+        display: flex;
+        justify-items: end !important;
     }
 }
