@@ -22,9 +22,19 @@ function Home() {
  
     return (
       <div className="layout-wrapper">
-      <div className="main-wrapper">
-     
-      </div>
+   <div className="toggle-btn-section">
+          <div className={`toggle-checkbox m-vertical-auto`}>
+            <input
+              className="toggle-btn__input"
+              type="checkbox"
+              name="checkbox"
+              onChange={handleThemeChange}
+              checked={theme === 'dark'}
+            />
+            <button type="button" className={`toggle-btn__input-label`} onClick={handleThemeChange}></button>
+          </div>
+        </div>
+
       <Button 
           color={'secondary'}
           text={'The longest tittle i can imagine'}/>
@@ -39,8 +49,7 @@ function Home() {
           color={'primary'}
           text={'1'} 
            />
-
-<Modals
+        <Modals
           color={'primary'}
           text={'1'} 
            />
@@ -48,26 +57,6 @@ function Home() {
           color={'primary'}
           text={'1'} 
            />
-           <InputField
-           color={'primary'}
-           text={'1'}
-           />
-           <header className="header">
-      <div className="header-content"> 
-        <div className="toggle-btn-section">
-          <div className={`toggle-checkbox m-vertical-auto`}>
-            <input
-              className="toggle-btn__input"
-              type="checkbox"
-              name="checkbox"
-              onChange={handleThemeChange}
-              checked={theme === 'dark'}
-            />
-            <button type="button" className={`toggle-btn__input-label`} onClick={handleThemeChange}></button>
-          </div>
-        </div>
-      </div>
-    </header>
     </div>
     );
 }
