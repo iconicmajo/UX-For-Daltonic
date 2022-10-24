@@ -13,10 +13,26 @@ import './styles.scss'
 function Home() {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
-  const handleThemeChange = () => {
-    const isCurrentDark = theme === 'dark';
-    setTheme(isCurrentDark ? 'light' : 'dark');
-    localStorage.setItem('default-theme', isCurrentDark ? 'light' : 'dark');
+  const handleThemeChange = (varTheme) => {
+    const isCurrentNormal = theme === 'normal';
+    if (theme !== 'normal'){
+      console.log('entro al if')
+      console.log(isCurrentNormal,)
+      if (theme === 'protanopie') {
+        console.log(theme)
+
+      }
+      if (theme === 'deuteranopie') {
+        console.log(theme)
+        
+      }
+      if (theme === 'tritanopie') {
+        console.log(theme)
+        
+      }
+    }
+    setTheme(varTheme);
+    localStorage.setItem('default-theme', varTheme );
   };
   
  
@@ -24,14 +40,42 @@ function Home() {
       <div className="layout-wrapper">
    <div className="toggle-btn-section">
           <div className={`toggle-checkbox m-vertical-auto`}>
+          <p>Normal</p>
             <input
               className="toggle-btn__input"
               type="checkbox"
+              label="protanopia"
               name="checkbox"
-              onChange={handleThemeChange}
-              checked={theme === 'dark'}
+              onChange={() =>{handleThemeChange('normal')}}
+              checked={theme === 'normal'}
             />
-            <button type="button" className={`toggle-btn__input-label`} onClick={handleThemeChange}></button>
+            <p>protanopia</p>
+            <input
+              className="toggle-btn__input"
+              type="checkbox"
+              label="protanopia"
+              name="checkbox"
+              onChange={() =>{handleThemeChange('dark')}}
+              checked={theme === 'protanopie'}
+            />
+            <p>Deuteranopia</p>
+            <input
+              className="toggle-btn__input"
+              type="checkbox"
+              label="protanopia"
+              name="checkbox"
+              onChange={() =>{handleThemeChange('deuteranopie')}}
+              checked={theme === 'deuteranopie'}
+            />
+            <p>Tritanopia</p>
+            <input
+              className="toggle-btn__input"
+              type="checkbox"
+              label="protanopia"
+              name="checkbox"
+              onChange={() =>{handleThemeChange('tritanopie')}}
+              checked={theme === 'tritanopie'}
+            />
           </div>
         </div>
 

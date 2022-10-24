@@ -5,7 +5,7 @@ import Home from "../Home";
 
 
 function App() {
-  const [theme, setTheme] = React.useState('dark');
+  const [theme, setTheme] = React.useState('normal');
   
   return (
     <div className="App">

@@ -1,5 +1,5 @@
 $themes: (
-  light: (
+  normal: (
     bodyBackgroundColor: white,
     headerFooterBackground: #fff,
     textColor: #000,
@@ -16,24 +16,24 @@ $themes: (
     secondary-color: orange,
 
   ),
-  /*protanopie: (
-    bodyBackgroundColor: #222736,
+  protanopie: (
+    bodyBackgroundColor: blue,
     headerFooterBackground: #36394c,
     textColor: #eff2f7,
     toggleBackground: #606071,
   ),
   deuteranopie: (
-    bodyBackgroundColor: #222736,
+    bodyBackgroundColor: green,
     headerFooterBackground: #36394c,
     textColor: #eff2f7,
     toggleBackground: #606071,
   ),
   tritanopie: (
-    bodyBackgroundColor: #222736,
+    bodyBackgroundColor: pink,
     headerFooterBackground: #36394c,
     textColor: #eff2f7,
     toggleBackground: #606071,
-  ),*/
+  ),
 );
 
 @mixin themify($themes) {
