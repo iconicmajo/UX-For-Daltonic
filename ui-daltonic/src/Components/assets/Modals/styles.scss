@@ -2,27 +2,61 @@
 
 /*Creacion del componente*/
 .modal {
-    background-color: #FFFFFF;
-    width: 25vw;
-    height: fit-content;
-    cursor: pointer;
-    padding: 15px 15px 15px 15px;
-    border-radius: 5px;
-    text-align: left;
-    justify-content: center;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    
 
-    .modal-tittle {
-        color: #000000DE;
-        font-weight: bolder;
-    }
+    .modal-object {
+        margin-left: 35vw;
+        background-color: #FFFFFF;
+        width: 25vw;
+        height: fit-content;
+        padding: 15px 15px 15px 15px;
+        border-radius: 5px;
+        text-align: left;
+        justify-content: center;
+        -webkit-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.45);
+        -moz-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.45);
 
-    .modal-body {
-        color: #575656;
-    }
+        .modal-tittle {
+            color: #000000DE;
+            font-weight: bolder;
 
-    .modal-footer {
-        text-align: end !important;
-        display: flex;
-        justify-items: end !important;
-    }
+            .closebtn {
+                margin-left: 15px;
+                color: black;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+              }
+              
+              .closebtn:hover {
+                color: black;
+              }
+        }
+    
+        .modal-body {
+            color: #575656;
+        }
+    
+        .modal-footer {
+            margin-left: 70%;
+            text-align: end !important;
+            display: flex;
+            justify-items: end;
+        }
+
+    } 
 }

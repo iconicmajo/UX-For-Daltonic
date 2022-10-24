@@ -7,6 +7,7 @@ import Badge from "../assets/Badges";
 import Modals from "../assets/Modals";
 import DropDown from "../assets/Dropdowns";
 import InputField from "../assets/Inputs";
+import icon from "../assets/images/coloradd.png"
 
 import './styles.scss'  
 
@@ -14,23 +15,7 @@ function Home() {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
   const handleThemeChange = (varTheme) => {
-    const isCurrentNormal = theme === 'normal';
-    if (theme !== 'normal'){
-      console.log('entro al if')
-      console.log(isCurrentNormal,)
-      if (theme === 'protanopie') {
-        console.log(theme)
-
-      }
-      if (theme === 'deuteranopie') {
-        console.log(theme)
-        
-      }
-      if (theme === 'tritanopie') {
-        console.log(theme)
-        
-      }
-    }
+    //const isCurrentNormal = theme === 'normal';
     setTheme(varTheme);
     localStorage.setItem('default-theme', varTheme );
   };
@@ -38,7 +23,12 @@ function Home() {
  
     return (
       <div className="layout-wrapper">
-   <div className="toggle-btn-section">
+        <div>
+        <div className="menu">
+          <div className="d-flex flex-column justify-content-around align-items-center w-100 h-100" style={{zIndex:'101'}}>
+            <img src={icon} className='img-burger' alt="Img" />
+            <div className="menu-options">
+            <div className="toggle-btn-section">
           <div className={`toggle-checkbox m-vertical-auto`}>
           <p>Normal</p>
             <input
@@ -78,10 +68,20 @@ function Home() {
             />
           </div>
         </div>
-
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
       <Button 
           color={'secondary'}
-          text={'The longest tittle i can imagine'}/>
+          text={'The longest tittle i can imagine'}
+          onClick={console.log('el boton button')}/>
+      <button className="primary" enabled='true'
+          onClick={() => {console.log('click button')}}
+          >hola
+      </button>
       <Alert 
           color={'primary'}
           text={'THIS IS AN ALERT'} />
@@ -93,14 +93,18 @@ function Home() {
           color={'primary'}
           text={'1'} 
            />
+           <button>
+            Displau modal
+           </button>
         <Modals
           color={'primary'}
-          text={'1'} 
+          text={'1'}
            />
            <DropDown
           color={'primary'}
           text={'1'} 
            />
+       
     </div>
     );
 }

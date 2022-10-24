@@ -4,10 +4,13 @@ import "./styles.scss";
 
 export const Alert = ({
   color,
-  text
+  text,
+  display='block'
 }) => {
   return(
-    <div className={`alert ${color}`}>
+    <div id="alert" className={`alert ${color}`} style={{display:`${display}`}}>
+      <span className="closebtn" onClick={() => {display='none'}}>&times;</span> 
+      {console.log(display)}
         {text ? text:'Insert Text Here'}
     </div>
   )
