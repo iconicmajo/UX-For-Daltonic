@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from './styles.scss'
 
 const FormInput = ({
   meta: { error },
@@ -13,7 +13,7 @@ const FormInput = ({
   maxlong,
 }) => {
   return (
-  <div>
+  <>
     <label>
       {title}
       {error  && <span className="required"> ({error})</span>}
@@ -29,7 +29,7 @@ const FormInput = ({
       valueField={valueField}
       textField={textField}
     />
-  </div>
+  </>
 )}
 
 export default FormInput;

@@ -11,7 +11,10 @@ class DropDowns extends Component {
   } = this.props
   return(
     <div className="dropdown">
-    <button className={`button-${color}`}>{tittle}</button>
+    <button className={`button-${color}`}>
+      {tittle}
+      <span class="material-icons">arrow_drop_down</span>
+    </button>
     <div>
       {options ? 
       <div className="dropdown-content">

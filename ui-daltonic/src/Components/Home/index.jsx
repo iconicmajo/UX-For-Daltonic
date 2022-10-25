@@ -90,7 +90,7 @@ class Home extends Component{
             </div>
             
             {this.state.openAlert ?  <Alert 
-              color={'secondary'}
+              color={'success'}
               text={'THIS IS AN ALERT'} />: <></>}
          
          <div className="elements-list">
@@ -146,13 +146,7 @@ class Home extends Component{
               />
           </div>
 
-              <button className="button-info"
-              onClick={() => {this.setState({openModal:!this.state.openModal})}}>
-                Mostrar Modal
-              </button>
-                {this.state.openModal ? <Modals
-                  display={true}
-                  />: <></>}
+             
 
               <DropDown
               color={'success'}
