@@ -2,7 +2,7 @@
 
 /*Creacion del componente*/
 .modal {
-    display: none;
+    //display: none;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -13,9 +13,11 @@
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
+    transition: ease-in-out 1s;
     
 
     .modal-object {
+        transition: ease-in-out 1s;
         margin-left: 35vw;
         background-color: #FFFFFF;
         width: 25vw;
@@ -52,7 +54,7 @@
         }
     
         .modal-footer {
-            margin-left: 70%;
+            margin-left: 65%;
             text-align: end !important;
             display: flex;
             justify-items: end;

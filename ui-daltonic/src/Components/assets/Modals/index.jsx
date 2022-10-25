@@ -3,13 +3,13 @@ import "./styles.scss";
 import Button from "../Buttons";
 
 
-export const Modals = ({
+ const Modals = ({
   color,
   text,
   display
 }) => {
   return(
-    <div className={`modal`}>
+    <div className={`modal`} style={{display: `${display}`}} >
       <div className="modal-object">
       <div className="modal-tittle">
       <span className="closebtn" onClick={() => {display='none'}}>&times;</span> 

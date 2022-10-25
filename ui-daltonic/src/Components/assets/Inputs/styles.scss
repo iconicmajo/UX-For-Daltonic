@@ -1,15 +1,28 @@
 @import '../../../styles/theme-vars.scss';
 
-/*Creacion del componente*/
-.button {
-    width: fit-content;
-    height: fit-content;
-    cursor: pointer;
-    padding: 15px 8px 15px 8px;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: center;
-}
+
+.aling {
+    text-align: initial;
+    margin-bottom: 8px;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4E4E4E;
+    text-align: start;
+    margin-top: 5px;
+    text-align: left !important;
+  }
+  
+  .label .required {
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+    text-align: start;
+    margin-top: 5px;
+    text-align: left !important;
+  }
 
 .primary {
     @include themify($themes) {

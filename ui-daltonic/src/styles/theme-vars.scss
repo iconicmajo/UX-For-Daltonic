@@ -85,9 +85,16 @@ button {
     font-weight: bold;
     background-color: transparent;
 
+    a {
+      @include themify($themes) {
+      color: themed('component-text');
+      }
+      text-decoration: none;
+    }
+
     .primary{
       @include themify($themes) {
-        color: themed('component-text') !important;;
+        color: themed('component-text') !important;
         background-color:  themed('primary-color') !important;
       }
       }

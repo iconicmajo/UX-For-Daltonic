@@ -11,8 +11,7 @@ function Colormenu() {
     setTheme(varTheme);
     localStorage.setItem('default-theme', varTheme );
   };
-  
- 
+
     return (
         <div className="menu">
             <div className="d-flex flex-column justify-content-around align-items-center w-100 h-100" style={{zIndex:'101'}}>
