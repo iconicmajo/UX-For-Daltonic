@@ -22,6 +22,15 @@ $themes: (
     success-color: #00236F,
     info-color:#007AFF,
     component-text: white,
+
+    /*Border Colors*/
+    primary-border: #0057FE,
+    secondary-border: #707070,
+    warning-border:#FCD402,
+    danger-border:#A19472,
+    success-border: #00236F,
+    info-border:#007AFF,
+
   ),
   deuteranopie: (
     bodyBackgroundColor: white,
@@ -75,7 +84,6 @@ $themes: (
 button {
     width: fit-content;
     height: fit-content;
-    cursor: pointer;
     padding: 15px 8px 15px 8px;
     border-radius: 5px;
     text-align: center;
@@ -84,6 +92,8 @@ button {
     margin-right: 8px;
     font-weight: bold;
     background-color: transparent;
+    border: transparent;
+    color: white;
 
     a {
       @include themify($themes) {
@@ -92,11 +102,60 @@ button {
       text-decoration: none;
     }
 
-    .primary{
+    .primary {
       @include themify($themes) {
-        color: themed('component-text') !important;
-        background-color:  themed('primary-color') !important;
+          color: themed('component-text') ;
+          background-color:  themed('primary-color') !important;
       }
-      }
+  }
+  
+    .secondary {
+        @include themify($themes) {
+            color: themed('component-text') !important;
+            background-color:  themed('secondary-color') !important;
+        }
+    }
+    
+    .success {
+        @include themify($themes) {
+            color: themed('component-text') !important;
+            background-color:  themed('success-color') !important;
+        }
+    }
+    
+    .danger {
+        @include themify($themes) {
+            color: themed('component-text');
+            background-color:  themed('danger-color') !important;
+        }
+    }
+    
+    .warning {
+        @include themify($themes) {
+            color: themed('component-text');
+            background-color:  themed('warning-color') !important;
+        }
+    }
+    
+    .info {
+        @include themify($themes) {
+            color: themed('component-text') !important;
+            background-color:  themed('info-color') !important;
+        }
+    }
 }
 
+button:hover {
+  transition: ease-in-out 0.3s;
+  -webkit-box-shadow: 10px 5px 14px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.45);
+}
+
+button:focus {
+  @include themify($themes) {
+    border:  1px solid themed('info-color') !important;
+}
+  transition: ease-in-out 0.3s;
+  -webkit-box-shadow: 10px 5px 14px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.45);
+}

@@ -24,30 +24,35 @@
 
     .primary {
         @include themify($themes) {
+            color: themed('component-text') !important;
             background-color:  themed('primary-color') !important;
         }
     }
     
     .secondary {
         @include themify($themes) {
+            color: themed('component-text') !important;
             background-color:  themed('secondary-color') !important;
         }
     }
     
     .success {
         @include themify($themes) {
+            color: themed('component-text') !important;
             background-color:  themed('success-color') !important;
         }
     }
     
     .danger {
         @include themify($themes) {
+            color: themed('component-text') !important;
             background-color:  themed('danger-color') !important;
         }
     }
     
     .warning {
         @include themify($themes) {
+            color: themed('component-text') !important;
             background-color:  themed('warning-color') !important;
         }
     }
