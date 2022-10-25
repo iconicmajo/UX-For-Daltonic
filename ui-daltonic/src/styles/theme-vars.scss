@@ -171,3 +171,6 @@ $themes: (
   @return map-get($theme-map, $key);
 }
 
+span {
+  font-size: small !important;
+}
