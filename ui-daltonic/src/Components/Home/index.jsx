@@ -36,30 +36,116 @@ class Home extends Component{
       <div className="layout-wrapper">
         <Colormenu />
         <div className="body">
-            <button className="button-success">
+        <div className="elements-list">
+            <button className="button-primary">
                 <a href="https://www.google.com">
                   Google it
                 </a>
               </button>
-
-            <button className="button-danger"
-              onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
+              <button className="button-secondary">
+                <a href="https://www.google.com">
+                  Google it
+                </a>
+              </button>
+              <button className="button-warning">
+                <a href="https://www.google.com">
+                  Google it
+                </a>
+              </button>
+              <button className="button-danger">
+                <a href="https://www.google.com">
+                  Google it
+                </a>
+              </button>
+              <button className="button-success">
+                <a href="https://www.google.com">
+                  Google it
+                </a>
+              </button>
+              <button className="button-info">
+                <a href="https://www.google.com">
+                  Google it
+                </a>
+              </button>
+            </div>
+            
+            <div className="elements-list">
+            <button className="button-primary"onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
                 {this.state.openAlert ? 'Ocultar Alerta':'Mostrar Alerta'}
               </button>
+              <button className="button-secondary"onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
+                {this.state.openAlert ? 'Ocultar Alerta':'Mostrar Alerta'}
+              </button>
+              <button className="button-warning"onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
+                {this.state.openAlert ? 'Ocultar Alerta':'Mostrar Alerta'}
+              </button>
+              <button className="button-danger"onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
+                {this.state.openAlert ? 'Ocultar Alerta':'Mostrar Alerta'}
+              </button>
+              <button className="button-success"onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
+                {this.state.openAlert ? 'Ocultar Alerta':'Mostrar Alerta'}
+              </button>
+              <button className="button-info"onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
+                {this.state.openAlert ? 'Ocultar Alerta':'Mostrar Alerta'}
+              </button>
+            </div>
+            
             {this.state.openAlert ?  <Alert 
               color={'secondary'}
               text={'THIS IS AN ALERT'} />: <></>}
          
-          <ProgressBar 
+         <div className="elements-list">
+         <ProgressBar 
               color={'primary'}
               text={'Youre almost Done'} 
               percentaje={'50'} />
-              <br/>
-              
+              <ProgressBar 
+              color={'secondary'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'warning'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'danger'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'success'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'info'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+         </div>
+         <div className="elements-list">
           <Badge 
               color={'primary'}
               text={'1'} 
               />
+              <Badge 
+              color={'secondary'}
+              text={'1'} 
+              />
+              <Badge 
+              color={'warning'}
+              text={'1'} 
+              />
+              <Badge 
+              color={'danger'}
+              text={'1'} 
+              />
+              <Badge 
+              color={'success'}
+              text={'1'} 
+              />
+              <Badge 
+              color={'info'}
+              text={'1'} 
+              />
+          </div>
 
               <button className="button-info"
               onClick={() => {this.setState({openModal:!this.state.openModal})}}>
@@ -70,11 +156,12 @@ class Home extends Component{
                   />: <></>}
 
               <DropDown
+              color={'success'}
               options={this.state.options}
               tittle={'Dropdown'}
               />
 
-              <input
+             { <input
                name="nameCart"
                component={FormInput}
                title="Propietario de Tarjeta"
@@ -82,7 +169,7 @@ class Home extends Component{
                data='hello'
                placeholder="Ingrese su nombre"
                //validate={[required]}
-               className="form-control"/>
+                className="form-control"/>}
           
           </div>
     </div>

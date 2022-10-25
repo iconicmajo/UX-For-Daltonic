@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import "./styles.scss";
-import Button from "../Buttons";
 
 
 class Modal extends Component {
@@ -10,7 +9,6 @@ constructor(props) {
     display: true
   };
 }
-
 
   render() {
     return(

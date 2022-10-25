@@ -11,8 +11,8 @@ class DropDowns extends Component {
   } = this.props
   return(
     <div className="dropdown">
-  <button className={`button-${color}`}>{tittle}</button>
-    <div >
+    <button className={`button-${color}`}>{tittle}</button>
+    <div>
       {options ? 
       <div className="dropdown-content">
       {
