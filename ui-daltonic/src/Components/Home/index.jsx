@@ -16,7 +16,17 @@ class Home extends Component{
     super(props);
     this.state = {
       openModal: false,
-      blogs: []
+      options: [
+        {
+          value:1,
+          label:1
+        },
+        {
+          value:2,
+          label:2
+        },
+
+      ]
     }
   }
 
@@ -45,22 +55,20 @@ class Home extends Component{
               text={'Youre almost Done'} 
               percentaje={'50'} />
               <br/>
-
           <Badge 
               color={'primary'}
               text={'1'} 
               />
               <button className="button-info"
-              onClick={() => {this.setState({openModal:true})}}>
+              onClick={() => {this.setState({openModal:!this.state.openModal})}}>
                 Mostrar Modal
               </button>
             {this.state.openModal ? <Modals
-              color={'primary'}
-              text={'1'}
+              display={true}
               />: <></>}
               <DropDown
-              color={'primary'}
-              text={'1'} 
+              options={this.state.options}
+              tittle={'Dropdown'}
               />
              
           </div>

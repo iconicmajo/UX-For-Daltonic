@@ -1,21 +1,30 @@
-import React from "react";
+import React, {Component} from "react";
 import "./styles.scss";
 
 
-export const DropDowns = ({
-  color,
-  text
-}) => {
+class DropDowns extends Component {
+  render() {
+    const {
+      color,
+      tittle,
+      options
+  } = this.props
   return(
     <div className="dropdown">
-  <button className="dropbtn">Dropdown</button>
-    <div className="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <button className="dropbtn">{tittle}</button>
+    <div >
+      {options ? 
+      <div className="dropdown-content">
+      {
+        options.map((data, idx) => (
+        <a value={data.value}>
+          {data.label}
+        </a>))
+      }</div>:<a>Insert Options</a>}
     </div>
 </div>
   )
+}
 }
 
 export default DropDowns;

@@ -1,15 +1,84 @@
 @import '../../../styles/theme-vars.scss';
 
 /*Creacion del componente*/
-.button {
+button {
     width: fit-content;
     height: fit-content;
-    cursor: pointer;
     padding: 15px 8px 15px 8px;
     border-radius: 5px;
     text-align: center;
     justify-content: center;
     margin-left: 8px;
     margin-right: 8px;
+    font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+
+    a {
+      @include themify($themes) {
+      color: themed('component-text');
+      }
+      text-decoration: none;
+    }
+
 }
+
+.button-primary {
+  @include themify($themes) {
+      color: themed('component-text') ;
+      background-color:  themed('primary-color') !important;
+  }
+}
+
+.button-secondary {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('secondary-color') !important;
+    }
+}
+
+.button-success {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('success-color') !important;
+    }
+}
+
+.button-danger {
+    @include themify($themes) {
+        color: themed('component-text');
+        background-color:  themed('danger-color') !important;
+    }
+}
+
+.button-warning {
+    @include themify($themes) {
+        color: themed('component-text');
+        background-color:  themed('warning-color') !important;
+    }
+}
+
+.button-info {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('info-color') !important;
+    }
+}
+
+button:hover {
+  transition: ease-in-out 0.3s;
+  -webkit-box-shadow: 10px 5px 14px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.45);
+}
+
+button:focus {
+  @include themify($themes) {
+    border:  1px solid themed('info-color') !important;
+}
+  transition: ease-in-out 0.3s;
+  -webkit-box-shadow: 10px 5px 14px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.45);
+}
+
 
