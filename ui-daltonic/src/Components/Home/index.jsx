@@ -55,17 +55,20 @@ class Home extends Component{
               text={'Youre almost Done'} 
               percentaje={'50'} />
               <br/>
+              
           <Badge 
               color={'primary'}
               text={'1'} 
               />
+
               <button className="button-info"
               onClick={() => {this.setState({openModal:!this.state.openModal})}}>
                 Mostrar Modal
               </button>
-            {this.state.openModal ? <Modals
-              display={true}
-              />: <></>}
+                {this.state.openModal ? <Modals
+                  display={true}
+                  />: <></>}
+                  
               <DropDown
               options={this.state.options}
               tittle={'Dropdown'}
