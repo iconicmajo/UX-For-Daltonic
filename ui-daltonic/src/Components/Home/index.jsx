@@ -30,12 +30,12 @@ class Home extends Component{
     }
   }
 
+
   render() {
     return (
       <div className="layout-wrapper">
         <Colormenu />
         <div className="body">
-
             <button className="button-success">
                 <a href="https://www.google.com">
                   Google it
@@ -68,12 +68,22 @@ class Home extends Component{
                 {this.state.openModal ? <Modals
                   display={true}
                   />: <></>}
-                  
+
               <DropDown
               options={this.state.options}
               tittle={'Dropdown'}
               />
-             
+
+              <input
+               name="nameCart"
+               component={FormInput}
+               title="Propietario de Tarjeta"
+               type="text"
+               data='hello'
+               placeholder="Ingrese su nombre"
+               //validate={[required]}
+               className="form-control"/>
+          
           </div>
     </div>
     );

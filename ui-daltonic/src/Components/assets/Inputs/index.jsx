@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './styles.scss'
 
 const FormInput = ({
-  //meta: { error },
-  input: {OnChange, value },
+  meta: { error },
+  input: { onChange, value },
   data,
   valueField,
   textField,
@@ -13,17 +13,17 @@ const FormInput = ({
   maxlong,
 }) => {
   return (
-  <div className={styles.aling}>
-    <label className={styles.label}>
+  <div>
+    <label>
       {title}
-      {/*error  && <span className={styles.required}> ({error})</span>*/}
+      {error  && <span className="required"> ({error})</span>}
     </label>
     <input
-      //className="form-control"
+      className="form-control"
       placeholder={placeholder}
       maxLength={maxlong}
       type={type}
-      //onChange={(e) => onChange(e)}
+      onChange={(e) => onChange(e)}
       value={value}
       data={data}
       valueField={valueField}
@@ -33,4 +33,5 @@ const FormInput = ({
 )}
 
 export default FormInput;
+
 
