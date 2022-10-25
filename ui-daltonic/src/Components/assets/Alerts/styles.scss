@@ -15,6 +15,8 @@
     justify-content: left;
     float: right;
     transition: opacity 0.6s;
+    border: 3px solid transparent;
+    
 
     .closebtn {
         margin-left: 15px;
@@ -32,38 +34,50 @@
       }
 }
 
-.primary {
+.alert-primary {
     @include themify($themes) {
         background-color:  themed('primary-color-alert') !important;
+        border: 3px solid themed('primary-border-alert') ;
     }
 }
 
-.secondary {
+
+.alert-secondary {
     @include themify($themes) {
         background-color:  themed('secondary-color-alert') !important;
+        border: 3px solid themed('secondary-border-alert') ;
+
     }
 }
 
-.success {
+.alert-success {
     @include themify($themes) {
         background-color:  themed('success-color-alert') !important;
+        border: 3px solid themed('success-border-alert') ;
+
     }
 }
 
-.danger {
+.alert-danger {
     @include themify($themes) {
         background-color:  themed('danger-color-alert') !important;
+        border: 3px solid themed('danger-border-alert') ;
+
     }
 }
 
-.warning {
+.alert-warning {
     @include themify($themes) {
         background-color:  themed('warning-color-alert') !important;
+        border: 3px solid themed('warning-border-alert') ;
+
     }
 }
 
-.info {
+.alert-info {
     @include themify($themes) {
         background-color:  themed('info-color-alert') !important;
+        border: 3px solid themed('info-border-alert') ;
+
     }
 }

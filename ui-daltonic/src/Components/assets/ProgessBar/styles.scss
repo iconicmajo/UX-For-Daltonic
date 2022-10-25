@@ -20,50 +20,50 @@
         border-radius: 30px;
         padding: 10px 5px 10px 5px;
         font-weight: bold;
-    }
-
-    .primary {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('primary-color') !important;
-        }
-    }
-    
-    .secondary {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('secondary-color') !important;
-        }
-    }
-    
-    .success {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('success-color') !important;
-        }
-    }
-    
-    .danger {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('danger-color') !important;
-        }
-    }
-    
-    .warning {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('warning-color') !important;
-        }
-    }
-    
-    .info {
-        @include themify($themes) {
-            background-color:  themed('info-color') !important;
-        }
+        color: white;
     }
 }
 
+.bar .primary {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('primary-color') !important;
+    }
+}
+
+.bar .secondary {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('secondary-color') !important;
+    }
+}
+
+.bar .success {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('success-color') !important;
+    }
+}
+
+.bar .danger {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('danger-color') !important;
+    }
+}
+
+.bar .warning {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('warning-color') !important;
+    }
+}
+
+.bar .info {
+    @include themify($themes) {
+        background-color:  themed('info-color') !important;
+    }
+}
 
 
 

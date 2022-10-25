@@ -7,7 +7,7 @@ export const Badges = ({
   text
 }) => {
   return(
-    <div className={`badge ${color}`}>
+    <div className={`badge badge-${color}`}>
         {text ? text:'Insert Text Here'}
     </div>
   )

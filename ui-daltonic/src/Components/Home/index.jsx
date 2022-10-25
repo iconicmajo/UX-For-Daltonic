@@ -26,18 +26,18 @@ class Home extends Component{
         <Colormenu />
         <div className="body">
 
-            <button className="success">
+            <button className="button-success">
                 <a href="https://www.google.com">
                   Google it
                 </a>
               </button>
 
-            <button className="danger"
+            <button className="button-danger"
               onClick={() => {this.setState({openAlert:!this.state.openAlert})}}>
                 {this.state.openAlert ? 'Ocultar Alerta':'Mostrar Alerta'}
               </button>
             {this.state.openAlert ?  <Alert 
-              color={'primary'}
+              color={'secondary'}
               text={'THIS IS AN ALERT'} />: <></>}
          
           <ProgressBar 
@@ -50,7 +50,7 @@ class Home extends Component{
               color={'primary'}
               text={'1'} 
               />
-              <button
+              <button className="button-info"
               onClick={() => {this.setState({openModal:true})}}>
                 Mostrar Modal
               </button>

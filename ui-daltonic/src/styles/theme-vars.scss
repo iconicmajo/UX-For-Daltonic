@@ -10,6 +10,31 @@ $themes: (
     success-color: #408458,
     info-color:#5DC7EC,
     component-text: white,
+
+      /*Border Colors*/
+      primary-border: #0057FE,
+      secondary-border: #707070,
+      warning-border:#FCD402,
+      danger-border:#A19472,
+      success-border: #00236F,
+      info-border:#007AFF,
+
+      /*Alert Colors*/
+      primary-color-alert: #7CC4D0,
+      secondary-color-alert: #7CC4D0,
+      warning-color-alert: #7CC4D0,
+      danger-color-alert: #7CC4D0,
+      success-color-alert: #7CC4D0,
+      info-color-alert: #7CC4D0,
+
+      /*Alert Borders*/
+      primary-border-alert:#008CA3,
+      secondary-border-alert: #008CA3,
+      warning-border-alert: #008CA3,
+      danger-border-alert: #008CA3,
+      success-border-alert: #008CA3,
+      info-border-alert: #008CA3,
+
   ),
   protanopie: (
     bodyBackgroundColor: white,
@@ -31,6 +56,22 @@ $themes: (
     success-border: #00236F,
     info-border:#007AFF,
 
+   /*Alert Colors*/
+   primary-color-alert: #7CC4D0,
+   secondary-color-alert: #7CC4D0,
+   warning-color-alert: #7CC4D0,
+   danger-color-alert: #7CC4D0,
+   success-color-alert: #7CC4D0,
+   info-color-alert: #7CC4D0,
+
+   /*Alert Borders*/
+   primary-border-alert:#008CA3,
+   secondary-border-alert: #008CA3,
+   warning-border-alert: #008CA3,
+   danger-border-alert: #008CA3,
+   success-border-alert: #008CA3,
+   info-border-alert: #008CA3,
+
   ),
   deuteranopie: (
     bodyBackgroundColor: white,
@@ -43,6 +84,30 @@ $themes: (
     success-color: #00236F,
     info-color:#007AFF,
     component-text: white,
+
+      /*Border Colors*/
+      primary-border: #0057FE,
+      secondary-border: #707070,
+      warning-border:#FCD402,
+      danger-border:#A19472,
+      success-border: #00236F,
+      info-border:#007AFF,
+
+     /*Alert Colors*/
+     primary-color-alert: #7CC4D0,
+     secondary-color-alert: #7CC4D0,
+     warning-color-alert: #7CC4D0,
+     danger-color-alert: #7CC4D0,
+     success-color-alert: #7CC4D0,
+     info-color-alert: #7CC4D0,
+
+     /*Alert Borders*/
+     primary-border-alert:#008CA3,
+     secondary-border-alert: #008CA3,
+     warning-border-alert: #008CA3,
+     danger-border-alert: #008CA3,
+     success-border-alert: #008CA3,
+     info-border-alert: #008CA3,
   ),
   tritanopie: (
     bodyBackgroundColor: white,
@@ -55,6 +120,31 @@ $themes: (
     success-color: #003C46,
     info-color:#01B6D1,
     component-text: white,
+
+      /*Border Colors*/
+      primary-border: #0057FE,
+      secondary-border: #707070,
+      warning-border:#FCD402,
+      danger-border:#A19472,
+      success-border: #00236F,
+      info-border:#007AFF,
+
+      /*Alert Colors*/
+      primary-color-alert: #7CC4D0,
+      secondary-color-alert: #7CC4D0,
+      warning-color-alert: #7CC4D0,
+      danger-color-alert: #7CC4D0,
+      success-color-alert: #7CC4D0,
+      info-color-alert: #7CC4D0,
+
+      /*Alert Borders*/
+      primary-border-alert:#008CA3,
+      secondary-border-alert: #008CA3,
+      warning-border-alert: #008CA3,
+      danger-border-alert: #008CA3,
+      success-border-alert: #008CA3,
+      info-border-alert: #008CA3,
+
   ),
 );
 
@@ -102,46 +192,47 @@ button {
       text-decoration: none;
     }
 
-    .primary {
-      @include themify($themes) {
-          color: themed('component-text') ;
-          background-color:  themed('primary-color') !important;
-      }
+}
+
+.button-primary {
+  @include themify($themes) {
+      color: themed('component-text') ;
+      background-color:  themed('primary-color') !important;
   }
-  
-    .secondary {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('secondary-color') !important;
-        }
+}
+
+.button-secondary {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('secondary-color') !important;
     }
-    
-    .success {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('success-color') !important;
-        }
+}
+
+.button-success {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('success-color') !important;
     }
-    
-    .danger {
-        @include themify($themes) {
-            color: themed('component-text');
-            background-color:  themed('danger-color') !important;
-        }
+}
+
+.button-danger {
+    @include themify($themes) {
+        color: themed('component-text');
+        background-color:  themed('danger-color') !important;
     }
-    
-    .warning {
-        @include themify($themes) {
-            color: themed('component-text');
-            background-color:  themed('warning-color') !important;
-        }
+}
+
+.button-warning {
+    @include themify($themes) {
+        color: themed('component-text');
+        background-color:  themed('warning-color') !important;
     }
-    
-    .info {
-        @include themify($themes) {
-            color: themed('component-text') !important;
-            background-color:  themed('info-color') !important;
-        }
+}
+
+.button-info {
+    @include themify($themes) {
+        color: themed('component-text') !important;
+        background-color:  themed('info-color') !important;
     }
 }
 

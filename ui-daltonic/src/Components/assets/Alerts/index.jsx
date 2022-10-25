@@ -8,10 +8,11 @@ export const Alert = ({
   display='block'
 }) => {
   return(
-    <div id="alert" className={`alert ${color}`} style={{display:`${display}`}}>
-      <span className="closebtn" onClick={() => {display='none'}}>&times;</span> 
+    <div id="alert" className={`alert alert-${color}`} style={{display:`${display}`}}>
+      {/*<span className="closebtn" onClick={() => {display='none'}}>&times;</span> */}
+      {text ? text:'Insert Text Here'}
       {console.log(display)}
-        {text ? text:'Insert Text Here'}
+        
     </div>
   )
 }
