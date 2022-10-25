@@ -1,5 +1,4 @@
 import React,{ Component }  from "react";
-import {ThemeContext} from "../../context/theme-context";
 import Button from '../assets/Buttons';
 import Alert from "../assets/Alerts";
 import ProgressBar from "../assets/ProgessBar";
