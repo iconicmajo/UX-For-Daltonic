@@ -9,7 +9,8 @@ export const Alert = ({
 }) => {
   return(
     <div id="alert" className={`alert alert-${color}`} style={{display:`${display}`}}>
-      {/*<span className="closebtn" onClick={() => {display='none'}}>&times;</span> */}
+      {/*ICONS
+      <span className="closebtn" onClick={() => {display='none'}}>&times;</span> */}
       {text ? text:'Insert Text Here'}
       {console.log(display)}
         
