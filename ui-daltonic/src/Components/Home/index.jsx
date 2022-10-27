@@ -1,11 +1,10 @@
 import React,{ Component }  from "react";
-import Button from '../assets/Buttons';
+import '../assets/Buttons';
 import Alert from "../assets/Alerts";
 import ProgressBar from "../assets/ProgessBar";
 import Badge from "../assets/Badges";
 import Modals from "../assets/Modals";
 import DropDown from "../assets/Dropdowns";
-import FormInput from "../assets/Inputs";
 import Colormenu from "../ColorMenu";
 
 import './styles.scss'  

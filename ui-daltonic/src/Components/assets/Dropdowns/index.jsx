@@ -19,11 +19,14 @@ class DropDowns extends Component {
       {options ? 
       <div className="dropdown-content">
       {
-        options.map((data, idx) => (
+        options.map((data) => (
+          // eslint-disable-next-line
         <a value={data.value}>
           {data.label}
         </a>))
-      }</div>:<a>Insert Options</a>}
+      }</div>:
+      <>Insert Options</>
+      }
     </div>
 </div>
   )

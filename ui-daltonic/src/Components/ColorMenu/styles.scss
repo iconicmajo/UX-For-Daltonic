@@ -4,7 +4,7 @@
     
     position: fixed;
     left: 0;
-    width: 8vw;
+    width: fit-content;
     //height: 12vh;
     text-align: center;
     top: 10vh;
@@ -65,9 +65,11 @@ img {
 }
   
 .menu:hover{
+  padding-left: 5%;
+  padding-right: 5%;
     position: fixed;
     left: 0;
-    width: 12vw;
+    width: fit-content;
     height: 100vh;
     top: 0vh;
     z-index: 101;
