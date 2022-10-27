@@ -34,8 +34,8 @@ class Home extends Component{
     return (
       <div className="layout-wrapper">
         <Colormenu />
-        <div className="body">
-        <div className="elements-list">
+       <div className="body">
+         {/*<div className="elements-list">
             <button className="button-primary">
                 <a href="https://www.google.com">
                   Google it
@@ -92,6 +92,10 @@ class Home extends Component{
             {this.state.openAlert ?  <Alert 
               color={'success'}
               text={'THIS IS AN ALERT'} />: <></>}
+
+
+
+              
          
          <div className="elements-list">
          <ProgressBar 
@@ -146,24 +150,41 @@ class Home extends Component{
               />
           </div>
 
-             
+          <button className="button-info"
+              onClick={() => {this.setState({openModal:!this.state.openModal})}}>
+                Mostrar Modal
+              </button>
+                {this.state.openModal ? <Modals
+                  display={true}
+                  />: <></>}
 
-              <DropDown
+             <DropDown
               color={'success'}
               options={this.state.options}
               tittle={'Dropdown'}
               />
-
-             { <input
+*/}
+                
+             {<input
                name="nameCart"
-               component={FormInput}
+               //component={FormInput}
                title="Propietario de Tarjeta"
                type="text"
                data='hello'
                placeholder="Ingrese su nombre"
                //validate={[required]}
-                className="form-control"/>}
-          
+              className="form-control"
+              />}
+               
+
+        <div class="input-icons">
+            <input class="form-control"
+               placeholder="Ingrese su nombre"
+               type="text"/>
+            <i><span class="material-icons">remove_red_eye</span></i>  
+        </div>
+      
+
           </div>
     </div>
     );
