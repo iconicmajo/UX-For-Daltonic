@@ -35,8 +35,41 @@ class Home extends Component{
       <div className="layout-wrapper">
         <Colormenu />
        <div className="body">
-         {/*<div className="elements-list">
-            <button className="button-primary">
+       <table class="default">
+
+<caption>Consumo de combustible de los autos a lo largo de las pruebas de manejo</caption>
+
+<tr>
+
+  <th scope="col">Componente</th>
+
+  <th>Visualización</th>
+
+</tr>
+
+
+
+<tr>
+
+  <th>Dropdowns</th>
+
+  <td> 
+    <DropDown
+              color={'success'}
+              options={this.state.options}
+              tittle={'Dropdown'}
+              />
+              </td>
+
+
+
+</tr>
+<tr>
+
+  <th>Buttons</th>
+
+  <td>
+    <button className="button-primary">
                 <a href="https://www.google.com">
                   Google it
                 </a>
@@ -66,6 +99,141 @@ class Home extends Component{
                   Google it
                 </a>
               </button>
+              </td>
+
+
+
+</tr>
+<tr>
+
+  <th>Badges</th>
+
+  <td>
+    <Badge 
+              color={'primary'}
+              text={'1'} 
+              />
+              <Badge 
+              color={'secondary'}
+              text={'1'} 
+              />
+              <Badge 
+              color={'warning'}
+              text={'1'} 
+              />
+              <Badge 
+              color={'danger'}
+              text={' '} 
+              />
+              <Badge 
+              color={'success'}
+              text={' '} 
+              />
+              <Badge 
+              color={'info'}
+              text={' '} 
+              />
+              </td>
+
+
+
+</tr>
+
+<tr>
+
+  <th>Alerts</th>
+
+  <td>
+  <Alert 
+              color={'primary'}
+              text={'Youre almost Done'} 
+              />
+              <Alert 
+              color={'secondary'}
+              text={'Youre almost Done'} 
+              />
+               <Alert 
+              color={'warning'}
+              text={'Youre almost Done'} 
+              />
+               <Alert 
+              color={'danger'}
+              text={'Youre almost Done'} 
+              />
+               <Alert 
+              color={'success'}
+              text={'Youre almost Done'} 
+              />
+               <Alert 
+              color={'info'}
+              text={'Youre almost Done'} 
+              />
+  </td>
+
+
+
+</tr>
+
+<tr>
+
+  <th>Progress Bar</th>
+
+  <td><ProgressBar 
+              color={'primary'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+              <ProgressBar 
+              color={'secondary'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'warning'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'danger'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'success'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
+               <ProgressBar 
+              color={'info'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} /></td>
+
+
+
+</tr>
+
+<tr>
+
+  <th>Input</th>
+
+  <td> <div class="input-icons">
+            <input class="form-control"
+               placeholder="Ingrese su nombre"
+               type="text"/>
+            <i><span class="material-icons">remove_red_eye</span></i>  
+        </div></td>
+</tr>
+
+<tr>
+
+  <th>Modals</th>
+
+  <td><Modals
+                  display={true}
+                  /></td>
+
+
+
+</tr>
+
+</table>
+         {/*<div className="elements-list">
+            
             </div>
             
             <div className="elements-list">
@@ -96,60 +264,6 @@ class Home extends Component{
 
 
               
-         
-         <div className="elements-list">
-         <ProgressBar 
-              color={'primary'}
-              text={'Youre almost Done'} 
-              percentaje={'50'} />
-              <ProgressBar 
-              color={'secondary'}
-              text={'Youre almost Done'} 
-              percentaje={'50'} />
-               <ProgressBar 
-              color={'warning'}
-              text={'Youre almost Done'} 
-              percentaje={'50'} />
-               <ProgressBar 
-              color={'danger'}
-              text={'Youre almost Done'} 
-              percentaje={'50'} />
-               <ProgressBar 
-              color={'success'}
-              text={'Youre almost Done'} 
-              percentaje={'50'} />
-               <ProgressBar 
-              color={'info'}
-              text={'Youre almost Done'} 
-              percentaje={'50'} />
-         </div>
-         <div className="elements-list">
-          <Badge 
-              color={'primary'}
-              text={'1'} 
-              />
-              <Badge 
-              color={'secondary'}
-              text={'1'} 
-              />
-              <Badge 
-              color={'warning'}
-              text={'1'} 
-              />
-              <Badge 
-              color={'danger'}
-              text={'1'} 
-              />
-              <Badge 
-              color={'success'}
-              text={'1'} 
-              />
-              <Badge 
-              color={'info'}
-              text={'1'} 
-              />
-          </div>
-
           <button className="button-info"
               onClick={() => {this.setState({openModal:!this.state.openModal})}}>
                 Mostrar Modal
@@ -158,14 +272,10 @@ class Home extends Component{
                   display={true}
                   />: <></>}
 
-             <DropDown
-              color={'success'}
-              options={this.state.options}
-              tittle={'Dropdown'}
-              />
+            
 */}
                 
-             {<input
+             {/*<input
                name="nameCart"
                //component={FormInput}
                title="Propietario de Tarjeta"
@@ -174,15 +284,11 @@ class Home extends Component{
                placeholder="Ingrese su nombre"
                //validate={[required]}
               className="form-control"
-              />}
+              />
+              
+      */}
                
 
-        <div class="input-icons">
-            <input class="form-control"
-               placeholder="Ingrese su nombre"
-               type="text"/>
-            <i><span class="material-icons">remove_red_eye</span></i>  
-        </div>
       
 
           </div>
