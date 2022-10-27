@@ -12,7 +12,8 @@ constructor(props) {
 
   render() {
     return(
-      <div className={`modal`} style={{display: `${this.state.display ? 'block':'none'}`}} >
+      <div className={`modal`}>
+      {/*</div><div className={`modal`} style={{display: `${this.state.display ? 'block':'none'}`}} >*/}
         <div className="modal-object">
         <div className="modal-tittle">
         <span className="closebtn" onClick={() => {this.setState({display:!this.state.display})}}>&times;</span> 

@@ -3,39 +3,27 @@
 /*Creacion del componente*/
 .alert {
     //position: fixed;
-    position:absolute;
-    z-index: 1000;
-    top: 25px;
+    //position:absolute;
+   // z-index: 1000;
+    //top: 25px;
     width: 25vw;
-    height: fit-content;
-    margin-left: 70vw;
+   // height: fit-content;
+    margin: 25px;
     padding: 15px 15px 15px 15px;
     border-radius: 5px;
     text-align: left;
     justify-content: left;
-    float: right;
+    //float: right;
     transition: opacity 0.6s;
     border: 3px solid transparent;
-    
+
     span {
         position: relative;
-        
+        margin-right: 10px;
+        font-size: 35px;
+        font-weight: bolder;
     }
 
-    .closebtn {
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        float: right;
-        font-size: 22px;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-      
-      .closebtn:hover {
-        color: black;
-      }
 }
 
 .alert-primary {

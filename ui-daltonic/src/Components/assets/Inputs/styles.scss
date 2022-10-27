@@ -35,7 +35,7 @@
     line-height: initial;
     color: #222222;
     //border: none;
-    //border-radius: 0;
+    border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     
@@ -75,6 +75,7 @@
     padding-top: 10px;
     object-fit: contain;
     background-color: #d9d8d8;
+    border-radius: 5px;
     height: 35px;
     width: 45px;
 
