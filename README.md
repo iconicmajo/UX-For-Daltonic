@@ -93,50 +93,51 @@ The badge has the colot and text props, if these are not declared when it's call
 ## Modals
 For use this component you must impor it in the file you'll be using it.
 ```
-
+import Modals from "../assets/Modals";
 ```
 
 Whenever you want to use it, call it like this:
 ```
-
+<Modals
+                  display={true}
+                  />
 ```
 
-The buttons has the and props, if these are not declared when it's called the component will use their default values.
+The modal has the display prop, if this is not declared when it's called, the component will use their default value in false. 
+With this componnet is required to enter the file to modify other props like closed, text and buttons.
 ```
-
+                  display={true}
 ```
 
 
 ## Progress Bars
-With this component you can use diffenent types of buttons, with the basic props like hovered or clicked. For use this component you must impor it in the file you'll be using it.
+With this component you can use diffenent types of progress bars. For use this component you must impor it in the file you'll be using it.
 ```
-
+import ProgressBar from "../assets/ProgessBar";
 ```
 
 Whenever you want to use it, call it like this:
 ```
-
+<ProgressBar 
+              color={'warning'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} />
 ```
 
-The buttons has the and props, if these are not declared when it's called the component will use their default values.
+The progress bar has the color, text and percentaje props, if these are not declared when it's called the component will use their default values.
 ```
-
+              color={'warning'}
+              text={'Youre almost Done'} 
+              percentaje={'50'} 
 ```
 
 
 ## Inputs
-With this component you can use diffenent types of buttons, with the basic props like hovered or clicked. For use this component you must impor it in the file you'll be using it.
-```
-
-```
-
 Whenever you want to use it, call it like this:
 ```
-
-```
-
-The buttons has the and props, if these are not declared when it's called the component will use their default values.
-```
+ <input class="form-control"
+               placeholder="Ingrese su nombre"
+               type="text"/>
 
 ```
 
