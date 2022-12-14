@@ -37,7 +37,7 @@ class Home extends Component{
        <div className="body">
        <table class="default">
 
-<caption>Consumo de combustible de los autos a lo largo de las pruebas de manejo</caption>
+<caption></caption>
 
 <tr>
 

@@ -55,7 +55,7 @@
 
 .bar .warning {
     @include themify($themes) {
-        color: themed('component-text') !important;
+        color: themed('component-text-blk') !important;
         background-color:  themed('warning-color') !important;
     }
 }

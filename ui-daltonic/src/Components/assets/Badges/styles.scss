@@ -16,36 +16,44 @@
 
 .badge-primary {
     @include themify($themes) {
+        color: themed('component-text') !important;
+
         background-color:  themed('primary-color') !important;
     }
 }
 
 .badge-secondary {
     @include themify($themes) {
+        color: themed('component-text') !important;
+
         background-color:  themed('secondary-color') !important;
     }
 }
 
 .badge-success {
     @include themify($themes) {
+        color: themed('component-text') !important;
         background-color:  themed('success-color') !important;
     }
 }
 
 .badge-danger {
     @include themify($themes) {
+        color: themed('component-text-blk') !important;
         background-color:  themed('danger-color') !important;
     }
 }
 
 .badge-warning {
     @include themify($themes) {
+        color: themed('component-text-blk') !important;
         background-color:  themed('warning-color') !important;
     }
 }
 
 .badge-info {
     @include themify($themes) {
+        color: themed('component-text') !important;
         background-color:  themed('info-color') !important;
     }
 }

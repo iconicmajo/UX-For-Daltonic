@@ -13,14 +13,9 @@ button {
     font-weight: bold;
     background-color: transparent;
     border: transparent;
-    color: white;
+    //color: white;
 
-    a {
-      @include themify($themes) {
-      color: themed('component-text');
-      }
-      text-decoration: none;
-    }
+   
 
 }
 
@@ -29,6 +24,12 @@ button {
       color: themed('component-text') ;
       background-color:  themed('primary-color') !important;
   }
+  a {
+    @include themify($themes) {
+    color: themed('component-text') !important;
+    }
+    text-decoration: none;
+  }
 }
 
 .button-secondary {
@@ -36,27 +37,56 @@ button {
         color: themed('component-text') !important;
         background-color:  themed('secondary-color') !important;
     }
+    a {
+        @include themify($themes) {
+        color: themed('component-text') !important;
+        }
+        text-decoration: none;
+      }
 }
 
 .button-success {
     @include themify($themes) {
         color: themed('component-text') !important;
         background-color:  themed('success-color') !important;
+        
     }
+    a {
+        @include themify($themes) {
+        color: themed('component-text') !important;
+        }
+        text-decoration: none;
+      }
 }
 
 .button-danger {
     @include themify($themes) {
-        color: themed('component-text');
+        color: themed('component-text-blk') !important;
         background-color:  themed('danger-color') !important;
+
+    
     }
+
+    a {
+        @include themify($themes) {
+        color: themed('component-text-blk') !important;
+        }
+        text-decoration: none;
+      }
 }
 
 .button-warning {
     @include themify($themes) {
-        color: themed('component-text');
+        color: themed('component-text-blk') !important;
         background-color:  themed('warning-color') !important;
+        
     }
+    a {
+        @include themify($themes) {
+        color: themed('component-text-blk') !important;
+        }
+        text-decoration: none;
+      }
 }
 
 .button-info {
@@ -64,6 +94,12 @@ button {
         color: themed('component-text') !important;
         background-color:  themed('info-color') !important;
     }
+    a {
+        @include themify($themes) {
+        color: themed('component-text') !important;
+        }
+        text-decoration: none;
+      }
 }
 
 button:hover {
